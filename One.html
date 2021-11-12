@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>One</title>
+    <style>
+        div {
+            background-color: pink;
+            padding: 5px;
+        }
+
+        li {
+            background-color: #ef89a1;
+            padding: 5px;
+            margin: 10px;
+            color: white;
+        }
+
+        span {
+            background-color: #ef436d;
+            padding: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            counter-reset: number;
+            margin: 20px 15px 20px -25px;
+        }
+
+        li::before {
+            content: counter(number) '.';
+            counter-increment: number;
+            background-color: #ef89a1;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li><span>Apple</span></li>
+        <li><span>Orange</span></li>
+        <li><span>Pineapple</span></li>
+        <li><span>Pear</span></li>
+        <li><span>Cherry</span></li>
+    </ul>
+
+</div>
+</body>
+</html>
